@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VCS Trends — Modern Practices</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; max-width:900px; margin:2rem auto; padding:0 1rem; line-height:1.5; }
+    nav a { margin-right:1rem; text-decoration:none; color:#0366d6; }
+    .card { border:1px solid #e1e4e8; padding:1rem; border-radius:8px; }
+    footer { font-size:0.9rem; color:#444; border-top:1px solid #eee; padding-top:0.75rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Modern Trends</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="trends.html">Modern Trends</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Cloud hosting & social coding</h2>
+      <p>Platforms like GitHub, GitLab and Bitbucket provide repo hosting, PR/MR workflows, issue tracking and CI integrations. They enabled large-scale collaboration and "social coding" in open source. Summary drawn from the report. :contentReference[oaicite:5]{index=5}</p>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h2>CI/CD & automation</h2>
+      <p>Version control is now the trigger for CI/CD: commits and merges run pipelines that build, test and deploy. This tight integration reduces integration problems and enables faster delivery. :contentReference[oaicite:6]{index=6}</p>
+      <ol>
+        <li>Commit & push → CI runs tests.</li>
+        <li>Pull request → code review + automated checks.</li>
+        <li>Merge → CD pipeline deploys.</li>
+      </ol>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h2>GitOps & Infrastructure as Code</h2>
+      <p>GitOps treats Git as the single source-of-truth for infrastructure; merging config changes triggers automated deployments (examples: FluxCD, ArgoCD). See the report’s GitOps section. :contentReference[oaicite:7]{index=7}</p>
+    </section>
+
+    <section class="card" style="margin-top:1rem;">
+      <h2>AI in code review</h2>
+      <p>AI tools now help with code suggestions, automated review comments and possibly smarter conflict resolution; they augment human reviewers. This trend is discussed in the report. :contentReference[oaicite:8]{index=8}</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sources: the provided report (see PDF in repo). Additional reading can be added here as links if needed. :contentReference[oaicite:9]{index=9}</p>
+  </footer>
+</body>
+</html>
