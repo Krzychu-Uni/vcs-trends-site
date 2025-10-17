@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VCS Trends — History</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; max-width:900px; margin:2rem auto; padding:0 1rem; line-height:1.5; }
+    nav a { margin-right:1rem; text-decoration:none; color:#0366d6; }
+    .timeline { border-left:3px solid #e1e4e8; padding-left:1rem; }
+    .entry { margin-bottom:1rem; }
+    footer { font-size:0.9rem; color:#444; border-top:1px solid #eee; padding-top:0.75rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VCS — Key Historical Milestones</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="trends.html">Modern Trends</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="timeline card">
+      <h2>Timeline (highlights)</h2>
+
+      <div class="entry">
+        <h3>1972 — SCCS</h3>
+        <p>Early file-level version control, introduced change tracking concepts used later in many tools.</p>
+      </div>
+
+      <div class="entry">
+        <h3>1982 — RCS</h3>
+        <p>Delta storage and per-file revision tracking (local VCS model).</p>
+      </div>
+
+      <div class="entry">
+        <h3>1986 — CVS</h3>
+        <p>Added networked repositories and project-level collaboration (client-server model).</p>
+      </div>
+
+      <div class="entry">
+        <h3>2000 — Subversion (SVN)</h3>
+        <p>Introduced atomic commits, better renames and a more robust centralized model compared to CVS.</p>
+      </div>
+
+      <div class="entry">
+        <h3>2005 — Git & Mercurial</h3>
+        <p>Distributed VCS (DVCS) appeared — every developer keeps a full history and commits locally. Git became dominant. See the Linux/Git story in the report for background. :contentReference[oaicite:2]{index=2}</p>
+      </div>
+
+    </section>
+
+    <section class="card">
+      <h2>Why DVCS changed the game</h2>
+      <ul>
+        <li><strong>Local commits:</strong> fast commits and local history even without network.</li>
+        <li><strong>Cheap branching & merging:</strong> encouraging feature branches and parallel work.</li>
+        <li><strong>Resilience:</strong> every clone is a backup — fewer single points of failure.</li>
+      </ul>
+      <p>These points are discussed in the report under the "Centralized vs. Distributed" section. :contentReference[oaicite:3]{index=3}</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Source: Report file <a href="History and Modern Trends in Version Control Systems.pdf">History and Modern Trends in Version Control Systems (PDF)</a>. :contentReference[oaicite:4]{index=4}</p>
+  </footer>
+</body>
+</html>
